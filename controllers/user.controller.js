@@ -19,9 +19,9 @@ const userLogin = async (req, res) => {
     });
   }
 
-  const passverify = await user.isPasswordCorrect(password);
+  // const passverify = user.password;
 
-  if (!passverify) {
+  if (password != user.password) {
     return res.json({
       access: false,
       data: "Password is incorrect",
