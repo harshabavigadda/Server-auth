@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000", "https://user-auth-u8mm.onrender.com"]
+    origin: ["http://localhost:3000", "https://user-authentication-gules.vercel.app"]
   })
 );
 
